@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project: Recipe Book</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f7f2;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #8B4513;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #D2691E;
+            padding-bottom: 15px;
+        }
+        
+        h2 {
+            color: #A0522D;
+            background-color: #FFEBCD;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #CD853F;
+        }
+        
+        .recipe-intro {
+            color: #5D4037;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        ol, ul {
+            background-color: #FFF8DC;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #D2691E;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #8B4513;
+            text-decoration: underline;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background-color: #D2691E;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #FFF8DC;
+        }
+        
+        tr:hover {
+            background-color: #FFEBCD;
+        }
+        
+        .recipe-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #D2691E;
+        }
+        
+        .step {
+            background-color: #FFFAF0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #CD853F;
+        }
+        
+        .time-info {
+            color: #8B4513;
+            font-weight: bold;
+            background-color: #FFEBCD;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        
+        .source-link {
+            background-color: #F5F5F5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #8B4513;
+            font-style: italic;
+            padding-top: 20px;
+            border-top: 1px dashed #D2691E;
+        }
+    </style>
+</head>
+<body>
+       
+    <h1>Alikhan's Recipe Book</h1>
+    
+    <p class="recipe-intro">Welcome to my collection of favorite recipes! Each one has been tested and perfected in my own kitchen.</p>
+    
+    <h2>Contents:</h2>
+    
+    <ol>
+        <li><a href="#recipe1">Classic Chocolate Chip Cookies</a></li>
+        <li><a href="#recipe2">Creamy Tomato Basil Soup</a></li>
+        <li><a href="#recipe3">Lemon Garlic Roasted Chicken</a></li>
+    </ol>
+    
+    <!-- Recipe 1 -->
+    <div class="recipe-card">
+        <h2 id="recipe1">Classic Chocolate Chip Cookies</h2>
+        
+        <p>
+            <span class="time-info">Time: 25 minutes</span>
+            <span class="time-info">Serves: 24 cookies</span>
+        </p>
+        
+        <p>These soft, chewy chocolate chip cookies are a timeless treat that everyone loves. Perfect with a glass of milk!</p>
+        
+        <h3>Ingredients</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>All-purpose flour</td>
+                    <td>2 ¼ cups</td>
+                </tr>
+                <tr>
+                    <td>Baking soda</td>
+                    <td>1 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Unsalted butter, softened</td>
+                    <td>1 cup</td>
+                </tr>
+                <tr>
+                    <td>Granulated sugar</td>
+                    <td>¾ cup</td>
+                </tr>
+                <tr>
+                    <td>Brown sugar, packed</td>
+                    <td>¾ cup</td>
+                </tr>
+                <tr>
+                    <td>Vanilla extract</td>
+                    <td>1 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Large eggs</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Semi-sweet chocolate chips</td>
+                    <td>2 cups</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Steps</h3>
+        <div class="step">
+            <p><strong>Step 1:</strong> Preheat oven to 375°F (190°C). Line baking sheets with parchment paper.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 2:</strong> In a small bowl, whisk together flour, baking soda, and salt.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 3:</strong> In a large bowl, beat butter, granulated sugar, brown sugar, and vanilla extract until creamy.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 4:</strong> Add eggs one at a time, beating well after each addition.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 5:</strong> Gradually beat in flour mixture. Stir in chocolate chips.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 6:</strong> Drop rounded tablespoons of dough onto baking sheets. Bake for 9-11 minutes or until golden brown.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 7:</strong> Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.</p>
+        </div>
+        
+        <p class="source-link"><em>Source: <a href="https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/">Allrecipes - Best Chocolate Chip Cookies</a></em></p>
+    </div>
+    
+    <!-- Recipe 2 -->
+    <div class="recipe-card">
+        <h2 id="recipe2">Creamy Tomato Basil Soup</h2>
+        
+        <p>
+            <span class="time-info">Time: 40 minutes</span>
+            <span class="time-info">Serves: 4</span>
+        </p>
+        
+        <p>A rich and comforting soup that pairs perfectly with grilled cheese sandwiches. The fresh basil adds a wonderful aroma.</p>
+        
+        <h3>Ingredients</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fresh tomatoes, chopped</td>
+                    <td>2 lbs</td>
+                </tr>
+                <tr>
+                    <td>Onion, chopped</td>
+                    <td>1 medium</td>
+                </tr>
+                <tr>
+                    <td>Garlic cloves, minced</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Vegetable broth</td>
+                    <td>4 cups</td>
+                </tr>
+                <tr>
+                    <td>Fresh basil leaves</td>
+                    <td>½ cup, packed</td>
+                </tr>
+                <tr>
+                    <td>Heavy cream</td>
+                    <td>½ cup</td>
+                </tr>
+                <tr>
+                    <td>Olive oil</td>
+                    <td>2 tablespoons</td>
+                </tr>
+                <tr>
+                    <td>Salt and pepper</td>
+                    <td>To taste</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Steps</h3>
+        <div class="step">
+            <p><strong>Step 1:</strong> Heat olive oil in a large pot over medium heat. Add onion and garlic, sauté until softened.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 2:</strong> Add chopped tomatoes and cook for 5 minutes, stirring occasionally.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 3:</strong> Pour in vegetable broth, bring to a boil, then reduce heat and simmer for 20 minutes.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 4:</strong> Remove from heat, add fresh basil leaves, and use an immersion blender to puree until smooth.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 5:</strong> Stir in heavy cream and season with salt and pepper to taste.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 6:</strong> Heat gently (without boiling) for another 5 minutes before serving.</p>
+        </div>
+        
+        <p class="source-link"><em>Source: <a href="https://www.foodnetwork.com/recipes/food-network-kitchen/creamy-tomato-soup-3362158">Food Network - Creamy Tomato Soup</a></em></p>
+    </div>
+    
+    <!-- Recipe 3 -->
+    <div class="recipe-card">
+        <h2 id="recipe3">Lemon Garlic Roasted Chicken</h2>
+        
+        <p>
+            <span class="time-info">Time: 1 hour 30 minutes</span>
+            <span class="time-info">Serves: 4-6</span>
+        </p>
+        
+        <p>Juicy, flavorful roasted chicken with crispy skin and a bright lemon-garlic aroma. Perfect for Sunday dinner!</p>
+        
+        <h3>Ingredients</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Whole chicken (3-4 lbs)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Lemons</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Garlic cloves, peeled</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Fresh rosemary</td>
+                    <td>4 sprigs</td>
+                </tr>
+                <tr>
+                    <td>Olive oil</td>
+                    <td>3 tablespoons</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1 tablespoon</td>
+                </tr>
+                <tr>
+                    <td>Black pepper</td>
+                    <td>1 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Butter, softened</td>
+                    <td>2 tablespoons</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Steps</h3>
+        <div class="step">
+            <p><strong>Step 1:</strong> Preheat oven to 425°F (220°C). Pat the chicken dry with paper towels.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 2:</strong> In a small bowl, mix softened butter, 1 tablespoon olive oil, salt, and pepper.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 3:</strong> Gently loosen the skin over the chicken breast and rub the butter mixture under the skin.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 4:</strong> Quarter one lemon and place it inside the chicken cavity along with 4 garlic cloves and 2 rosemary sprigs.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 5:</strong> Place chicken in a roasting pan, drizzle with remaining olive oil, and surround with remaining garlic cloves and lemon slices from the second lemon.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 6:</strong> Roast for 1 to 1½ hours, until internal temperature reaches 165°F (74°C) and skin is golden brown.</p>
+        </div>
+        
+        <div class="step">
+            <p><strong>Step 7:</strong> Let rest for 15 minutes before carving and serving.</p>
+        </div>
+        
+        <p class="source-link"><em>Source: <a href="https://www.simplyrecipes.com/recipes/perfect_roast_chicken/">Simply Recipes - Perfect Roast Chicken</a></em></p>
+    </div>
+    
+    <div class="footer">
+        <p>Recipe Book Project • Made with ❤️ • Enjoy your cooking!</p>
+    </div>
+</body>
+</html>
